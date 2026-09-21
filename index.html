@@ -260,12 +260,12 @@
       <h2>📬 获取上线通知</h2>
       <div class="cta-box">
         <p style="margin-bottom: 20px;">我们正在内测中，留下邮箱，第一时间获取 API 密钥和文档</p>
-        <!-- 金数据表单：提交后可在金数据后台看到数据 -->
-        <form id="lead-form" action="https://gnwtr5ea.jsjform.com/f/U5cQy3" method="POST" style="display: inline-flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
-          <input type="email" name="email" placeholder="your@email.com" required style="padding: 12px 16px; background: #0f172a; border: 1px solid #475569; border-radius: 8px; color: #e2e8f0; font-size: 1rem; width: 300px;" />
-          <button type="submit">订阅通知</button>
+        <!-- FunctionGraph 邮箱收集：原地 POST，无跳转 -->
+        <form id="lead-form" style="display: inline-flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+          <input type="email" id="lead-email" name="email" placeholder="your@email.com" required style="padding: 12px 16px; background: #0f172a; border: 1px solid #475569; border-radius: 8px; color: #e2e8f0; font-size: 1rem; width: 300px;" />
+          <button type="submit" id="lead-submit">订阅通知</button>
         </form>
-        <p id="email-msg" style="margin-top: 12px; font-size: 0.9rem;"></p>
+        <p id="email-msg" style="margin-top: 12px; font-size: 0.9rem; min-height: 20px;"></p>
       </div>
     </div>
     
@@ -275,7 +275,7 @@
     </div>
     
     <footer>
-      <p>SourceTrace © 2026 — 人因工程师副业项目 | 当前版本：v0.1-prototype</p>
+      <p>SourceTrace © 2026 · AI 合规溯源 API · v0.1-prototype</p>
       <p style="margin-top: 8px;">Powered by SQLite + FTS5 + 诚实降级引擎</p>
     </footer>
   </div>
@@ -370,17 +370,50 @@
       search();
     }
     
-    function submitEmail() {
-      const email = document.getElementById('email').value.trim();
+    // 邮箱收集：原地 POST 到 FunctionGraph
+    // ⚠️ 部署后把此地址改成你的 APIG 触发地址，例如 https://xxx.apig.cn-north-1.huaweicloudapis.com/v1/leads
+    const LEAD_ENDPOINT = 'https://YOUR-APIG-ENDPOINT/v1/leads';
+
+    document.getElementById('lead-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('lead-email').value.trim();
       const msg = document.getElementById('email-msg');
+      const btn = document.getElementById('lead-submit');
+
       if (!email || !email.includes('@')) {
         msg.style.color = '#ef4444';
         msg.textContent = '请输入有效邮箱';
         return;
       }
-      msg.style.color = '#60a5fa';
-      msg.textContent = '✓ 已记录！上线时我们会通知你（演示模式，未实际发送）';
-    }
+
+      btn.disabled = true;
+      btn.textContent = '提交中...';
+
+      try {
+        const resp = await fetch(LEAD_ENDPOINT, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({email})
+        });
+        const data = await resp.json();
+
+        if (resp.ok && data.ok) {
+          msg.style.color = '#60a5fa';
+          msg.textContent = '✓ 订阅成功！上线时我们会通知你';
+          document.getElementById('lead-form').reset();
+        } else {
+          msg.style.color = '#ef4444';
+          msg.textContent = '提交失败，请稍后再试';
+        }
+      } catch (err) {
+        // 后端未部署时给出友好提示，不要暴露报错
+        msg.style.color = '#f59e0b';
+        msg.textContent = '服务暂不可用，请稍后再试';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '订阅通知';
+      }
+    });
     
     // 回车搜索
     document.getElementById('query')?.addEventListener('keypress', e => {
