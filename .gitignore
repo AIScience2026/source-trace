@@ -1,0 +1,23 @@
+# 敏感文件
+.env
+compliance.db
+billing.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 临时文件
+*.tmp
+*.log
+*.jsonl
+
+# 文档
+信源清单-Phase1.md
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,1625 @@
+{
+  "exported_at": "2026-09-20T23:53:22.438242",
+  "total": 56,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395284407.htm",
+      "type": "official_regulation",
+      "title": "人工智能拟人化互动服务管理暂行办法（2026-07-15 起施行）",
+      "confidence": 0.94,
+      "domain": "www.cac.gov.cn",
+      "timeline": [
+        {
+          "ts": "2026-04-10",
+          "event": "网信办等五部门联合公布《办法》",
+          "source": "cac.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.95
+        },
+        {
+          "ts": "2026-07-15",
+          "event": "《办法》正式施行（四章三十二条）",
+          "source": "cac.gov.cn",
+          "tag": "official_response",
+          "confidence": 0.95
+        }
+      ],
+      "keywords": [],
+      "soft_aliases": [
+        "AI 伴侣",
+        "AI伴侣",
+        "ai伴侣",
+        "人工智能拟人化互动服务管理暂行办法",
+        "情感陪伴",
+        "情感陪伴类",
+        "拟人化互动",
+        "拟人化互动服务管理暂行",
+        "虚拟伴侣",
+        "陪伴类 AI",
+        "陪伴类AI"
+      ],
+      "context": [
+        "义务",
+        "办法",
+        "合规",
+        "意见",
+        "暂行办法",
+        "条例",
+        "治理",
+        "法规",
+        "监管",
+        "管理",
+        "红线",
+        "要求",
+        "规则",
+        "规范化",
+        "风险"
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "type": "official_regulation",
+      "title": "Regulation (EU) 2024/1689 (AI Act)",
+      "confidence": 0.95,
+      "domain": "eur-lex.europa.eu",
+      "timeline": [
+        {
+          "ts": "2024-06-13",
+          "event": "EU AI Act 正式通过",
+          "source": "eur-lex.europa.eu",
+          "tag": "initial_claim",
+          "confidence": 0.96
+        },
+        {
+          "ts": "2024-08-01",
+          "event": "禁止性实践等首批条款生效",
+          "source": "eur-lex.europa.eu",
+          "tag": "official_response",
+          "confidence": 0.9
+        },
+        {
+          "ts": "2026-08-02",
+          "event": "Art.50 透明度义务进入可执法状态（开罚）",
+          "source": "eur-lex.europa.eu",
+          "tag": "enforcement",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "EU AI Act",
+        "EU Artificial Intelligence Act",
+        "欧盟人工智能法案"
+      ],
+      "soft_aliases": [
+        "欧盟AI法案"
+      ],
+      "context": []
+    },
+    {
+      "id": 3,
+      "url": "https://doi.org/10.6028/NIST.AI.100-1",
+      "type": "official_guideline",
+      "title": "NIST AI Risk Management Framework 1.0",
+      "confidence": 0.93,
+      "domain": "doi.org",
+      "timeline": [
+        {
+          "ts": "2023-01-26",
+          "event": "NIST 发布 AI RMF 1.0",
+          "source": "nist.gov",
+          "tag": "initial_claim",
+          "confidence": 0.94
+        }
+      ],
+      "keywords": [
+        "NIST AI RMF",
+        "NIST AI Risk Management Framework",
+        "NIST AI 风险管理框架"
+      ],
+      "soft_aliases": [],
+      "context": []
+    },
+    {
+      "id": 4,
+      "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+      "type": "official_regulation",
+      "title": "Regulation (EU) 2026/1744 (Digital Omnibus — 高风险义务推迟)",
+      "confidence": 0.94,
+      "domain": "eur-lex.europa.eu",
+      "timeline": [
+        {
+          "ts": "2026-07-24",
+          "event": "OJ 公布 Regulation (EU) 2026/1744",
+          "source": "eur-lex.europa.eu",
+          "tag": "initial_claim",
+          "confidence": 0.95
+        },
+        {
+          "ts": "2026-07-27",
+          "event": "生效：Annex III 高风险推迟至 2027-12-02；Art.50 透明度维持 2026-08-02 可执法",
+          "source": "eur-lex.europa.eu",
+          "tag": "official_response",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "Digital Omnibus",
+        "Digital Omnibus 2026/1744",
+        "EU 2026/1744",
+        "欧盟人工智能法修订 2026/1744",
+        "高风险义务推迟"
+      ],
+      "soft_aliases": [],
+      "context": []
+    },
+    {
+      "id": 5,
+      "url": "https://www.iso.org/ru/standard/88373.html",
+      "type": "official_standard",
+      "title": "ISO 9241-222:2026 以人为中心设计自评",
+      "confidence": 0.93,
+      "domain": "www.iso.org",
+      "timeline": [
+        {
+          "ts": "2026-06-26",
+          "event": "ISO 发布 9241-222:2026",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.94
+        }
+      ],
+      "keywords": [
+        "ISO 9241 第三部分",
+        "ISO 9241-222",
+        "ISO/IEC 9241-222",
+        "以人为中心设计自评标准"
+      ],
+      "soft_aliases": [],
+      "context": []
+    },
+    {
+      "id": 6,
+      "url": "https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm",
+      "type": "official_notice",
+      "title": "中央网信办「清朗·整治AI应用乱象」第二阶段通报（清理561万条、处置账号4.9万）",
+      "confidence": 0.95,
+      "domain": "www.cac.gov.cn",
+      "timeline": [
+        {
+          "ts": "2026-09-02",
+          "event": "中央网信办发布清朗二阶段通报",
+          "source": "cac.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.96
+        }
+      ],
+      "keywords": [
+        "整治AI应用乱象",
+        "清朗·整治AI应用乱象",
+        "清朗整治AI应用乱象第二阶段"
+      ],
+      "soft_aliases": [
+        "清朗二阶段"
+      ],
+      "context": []
+    },
+    {
+      "id": 7,
+      "url": "https://www.cac.gov.cn/2025-03/xx/c_标识办法原文.htm",
+      "type": "official_regulation",
+      "title": "人工智能生成合成内容标识办法（2025-09-01 施行）",
+      "confidence": 0.92,
+      "domain": "www.cac.gov.cn",
+      "timeline": [
+        {
+          "ts": "2025-03",
+          "event": "四部门联合公布《标识办法》",
+          "source": "cac.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.92
+        },
+        {
+          "ts": "2025-09-01",
+          "event": "《标识办法》正式施行",
+          "source": "cac.gov.cn",
+          "tag": "official_response",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "AI生成合成内容标识办法",
+        "人工智能生成合成内容标识办法",
+        "生成合成内容标识办法"
+      ],
+      "soft_aliases": [
+        "内容标识办法",
+        "标识办法"
+      ],
+      "context": []
+    },
+    {
+      "id": 8,
+      "url": "https://www.cac.gov.cn/2023-08/15/c_生成式AI暂行办法.htm",
+      "type": "official_regulation",
+      "title": "生成式人工智能服务管理暂行办法",
+      "confidence": 0.92,
+      "domain": "cac.gov.cn",
+      "timeline": [
+        {
+          "ts": "2023-08-15",
+          "event": "网信办等发布《生成式AI服务管理暂行办法》",
+          "source": "cac.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "AIGC",
+        "生成式AI",
+        "生成式人工智能服务",
+        "生成式人工智能服务管理暂行办法"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "办法",
+        "暂行办法",
+        "服务",
+        "管理"
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://www.cac.gov.cn/2023-01/10/c_深度合成管理规定.htm",
+      "type": "official_regulation",
+      "title": "互联网信息服务深度合成管理规定",
+      "confidence": 0.92,
+      "domain": "cac.gov.cn",
+      "timeline": [
+        {
+          "ts": "2023-01-10",
+          "event": "网信办等发布《互联网信息服务深度合成管理规定》",
+          "source": "cac.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "AI换脸",
+        "deepfake",
+        "互联网信息服务深度合成管理规定",
+        "深度合成",
+        "深度合成服务"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "服务",
+        "管理",
+        "规定"
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://www.most.gov.cn/伦理审查办法.htm",
+      "type": "official_regulation",
+      "title": "科技伦理审查办法（试行）",
+      "confidence": 0.9,
+      "domain": "most.gov.cn",
+      "timeline": [
+        {
+          "ts": "2023-12-01",
+          "event": "科技部等发布《科技伦理审查办法（试行）》",
+          "source": "most.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI伦理",
+        "伦理审查",
+        "科技伦理",
+        "科技伦理审查办法"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "办法",
+        "审查",
+        "科技部"
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://www.npc.gov.cn/数据安全法.htm",
+      "type": "official_regulation",
+      "title": "数据安全法",
+      "confidence": 0.95,
+      "domain": "npc.gov.cn",
+      "timeline": [
+        {
+          "ts": "2021-09-01",
+          "event": "全国人大通过《数据安全法》",
+          "source": "npc.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.95
+        }
+      ],
+      "keywords": [
+        "数据出境",
+        "数据分类分级",
+        "数据安全",
+        "数据安全法"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "安全",
+        "数据",
+        "法"
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://www.npc.gov.cn/个人信息保护法.htm",
+      "type": "official_regulation",
+      "title": "个人信息保护法",
+      "confidence": 0.95,
+      "domain": "npc.gov.cn",
+      "timeline": [
+        {
+          "ts": "2021-11-01",
+          "event": "全国人大通过《个人信息保护法》",
+          "source": "npc.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.95
+        }
+      ],
+      "keywords": [
+        "PIPL",
+        "个人信息保护",
+        "个人信息保护法",
+        "隐私"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "个人信息",
+        "保护",
+        "法"
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://www.npc.gov.cn/网络安全法.htm",
+      "type": "official_regulation",
+      "title": "网络安全法",
+      "confidence": 0.95,
+      "domain": "npc.gov.cn",
+      "timeline": [
+        {
+          "ts": "2017-06-01",
+          "event": "全国人大通过《网络安全法》",
+          "source": "npc.gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.95
+        }
+      ],
+      "keywords": [
+        "关键信息基础设施",
+        "网络安全",
+        "网络安全法"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "安全",
+        "法",
+        "网络"
+      ]
+    },
+    {
+      "id": 14,
+      "url": "https://temp.source-trace.local/14-nist-ai-600-1",
+      "type": "official_guideline",
+      "title": "NIST AI 600-1",
+      "confidence": 0.9,
+      "domain": "nist.gov",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "NIST 发布 AI 600-1（生成式AI风险管理）",
+          "source": "nist.gov",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "GPAI",
+        "NIST AI 600-1",
+        "生成式AI风险管理"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "NIST",
+        "生成式",
+        "风险管理"
+      ]
+    },
+    {
+      "id": 15,
+      "url": "https://temp.source-trace.local/15-nist-ai-700-1",
+      "type": "official_guideline",
+      "title": "NIST AI 700-1",
+      "confidence": 0.9,
+      "domain": "nist.gov",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "NIST 发布 AI 700-1（AI安全测试）",
+          "source": "nist.gov",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI安全测试",
+        "AI评估",
+        "NIST AI 700-1",
+        "red teaming"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "NIST",
+        "安全",
+        "测试"
+      ]
+    },
+    {
+      "id": 16,
+      "url": "https://temp.source-trace.local/16-oecd-ai",
+      "type": "official_guideline",
+      "title": "OECD AI 原则",
+      "confidence": 0.92,
+      "domain": "oecd.org",
+      "timeline": [
+        {
+          "ts": "2019-05-22",
+          "event": "OECD 发布 AI 原则",
+          "source": "oecd.org",
+          "tag": "initial_claim",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "AI原则",
+        "OECD AI",
+        "OECD AI 原则",
+        "可信AI"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "OECD",
+        "原则",
+        "可信"
+      ]
+    },
+    {
+      "id": 17,
+      "url": "https://temp.source-trace.local/17-unesco-ai",
+      "type": "official_guideline",
+      "title": "UNESCO AI 伦理建议书",
+      "confidence": 0.92,
+      "domain": "unesco.org",
+      "timeline": [
+        {
+          "ts": "2021-11-30",
+          "event": "UNESCO 通过 AI 伦理建议书",
+          "source": "unesco.org",
+          "tag": "initial_claim",
+          "confidence": 0.92
+        }
+      ],
+      "keywords": [
+        "AI伦理",
+        "UNESCO AI 伦理建议书",
+        "UNESCO AI伦理",
+        "伦理框架"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "UNESCO",
+        "伦理",
+        "建议书"
+      ]
+    },
+    {
+      "id": 18,
+      "url": "https://temp.source-trace.local/18-iso-9241-210",
+      "type": "official_standard",
+      "title": "ISO 9241-210 人因工程设计",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2019",
+          "event": "ISO 发布 9241-210:2019",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "HCD",
+        "ISO 9241-210",
+        "UCD",
+        "以人为中心设计"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "人因",
+        "设计"
+      ]
+    },
+    {
+      "id": 19,
+      "url": "https://temp.source-trace.local/19-iso-9241-211",
+      "type": "official_standard",
+      "title": "ISO 9241-211 设计规范",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2019",
+          "event": "ISO 发布 9241-211:2019",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "HCD设计规范",
+        "ISO 9241-211",
+        "可用性工程"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "设计",
+        "设计规范"
+      ]
+    },
+    {
+      "id": 20,
+      "url": "https://temp.source-trace.local/20-iso-9241-220",
+      "type": "official_standard",
+      "title": "ISO 9241-220 用户体验度量",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2019",
+          "event": "ISO 发布 9241-220:2019",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9241-220",
+        "UX度量",
+        "可用性度量",
+        "用户体验"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "度量",
+        "用户体验"
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://temp.source-trace.local/21-iso-9241-230",
+      "type": "official_standard",
+      "title": "ISO 9241-230 语音交互",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2018",
+          "event": "ISO 发布 9241-230:2018",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9241-230",
+        "VUI",
+        "语音交互",
+        "语音界面"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "交互",
+        "语音"
+      ]
+    },
+    {
+      "id": 22,
+      "url": "https://temp.source-trace.local/22-iso-9241-240",
+      "type": "official_standard",
+      "title": "ISO 9241-240 人因工效学",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2022",
+          "event": "ISO 发布 9241-240:2022",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9241-240",
+        "人因工效学",
+        "工效学设计"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "工效学"
+      ]
+    },
+    {
+      "id": 23,
+      "url": "https://temp.source-trace.local/23-iso-9241-280",
+      "type": "official_standard",
+      "title": "ISO 9241-280 无障碍设计",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2020",
+          "event": "ISO 发布 9241-280:2020",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9241-280",
+        "WCAG",
+        "可访问性",
+        "无障碍"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "无障碍"
+      ]
+    },
+    {
+      "id": 24,
+      "url": "https://temp.source-trace.local/24-gb-t-41870-2022",
+      "type": "official_standard",
+      "title": "GB/T 41870-2022 社交机器人",
+      "confidence": 0.9,
+      "domain": "gov.cn",
+      "timeline": [
+        {
+          "ts": "2022",
+          "event": "中国发布 GB/T 41870-2022《社交机器人》",
+          "source": "gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "GB/T 41870",
+        "GB/T 41870-2022",
+        "chatbot",
+        "对话系统",
+        "社交机器人"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "GB/T",
+        "机器人",
+        "社交"
+      ]
+    },
+    {
+      "id": 25,
+      "url": "https://temp.source-trace.local/25-gb-t-36430-2018",
+      "type": "official_standard",
+      "title": "GB/T 36430-2018 服务机器人性能",
+      "confidence": 0.9,
+      "domain": "gov.cn",
+      "timeline": [
+        {
+          "ts": "2018",
+          "event": "中国发布 GB/T 36430-2018《服务机器人性能》",
+          "source": "gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "GB/T 36430",
+        "GB/T 36430-2018",
+        "性能测试",
+        "服务机器人",
+        "机器人评价"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "GB/T",
+        "服务机器人"
+      ]
+    },
+    {
+      "id": 26,
+      "url": "https://temp.source-trace.local/38-ieee-p7000",
+      "type": "official_standard",
+      "title": "IEEE P7000 - Model Standard for Trustworthy Autonomous Systems",
+      "confidence": 0.93,
+      "domain": "ieee.org",
+      "timeline": [
+        {
+          "ts": "2022",
+          "event": "IEEE 发布 P7000 标准",
+          "source": "ieee.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "IEEE P7000",
+        "可信AI",
+        "自主系统"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IEEE",
+        "可信",
+        "自主"
+      ]
+    },
+    {
+      "id": 27,
+      "url": "https://temp.source-trace.local/39-ieee-p2864",
+      "type": "official_standard",
+      "title": "IEEE P2864 - AI System Lifecycle",
+      "confidence": 0.93,
+      "domain": "ieee.org",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "IEEE 发布 P2864 标准",
+          "source": "ieee.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "AI生命周期",
+        "IEEE 2864",
+        "IEEE P2864",
+        "RMF"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IEEE",
+        "生命周期"
+      ]
+    },
+    {
+      "id": 28,
+      "url": "https://temp.source-trace.local/51-iso-10218-1",
+      "type": "official_standard",
+      "title": "ISO 10218-1:2011 工业机器人安全 Part 1",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2011",
+          "event": "ISO 发布 10218-1:2011",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 10218",
+        "ISO 10218-1",
+        "工业机器人安全"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "安全",
+        "工业机器人"
+      ]
+    },
+    {
+      "id": 29,
+      "url": "https://temp.source-trace.local/52-iso-10218-2",
+      "type": "official_standard",
+      "title": "ISO 10218-2:2011 工业机器人安全 Part 2",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2011",
+          "event": "ISO 发布 10218-2:2011",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 10218-2",
+        "机器人系统安全"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "系统安全"
+      ]
+    },
+    {
+      "id": 30,
+      "url": "https://temp.source-trace.local/53-iso-10218-2023",
+      "type": "official_standard",
+      "title": "ISO 10218-1:2023 修订版",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "ISO 发布 10218-1:2023 修订版",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 10218 修订",
+        "ISO 10218-2023",
+        "工业机器人安全修订"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "修订"
+      ]
+    },
+    {
+      "id": 31,
+      "url": "https://temp.source-trace.local/54-iso-15066",
+      "type": "official_standard",
+      "title": "ISO 15066:2016 协作机器人安全",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2016",
+          "event": "ISO 发布 15066:2016",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "Cobot",
+        "ISO 15066",
+        "协作机器人"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "协作"
+      ]
+    },
+    {
+      "id": 32,
+      "url": "https://temp.source-trace.local/55-iso-8373",
+      "type": "official_standard",
+      "title": "ISO 8373:2021 机器人术语",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2021",
+          "event": "ISO 发布 8373:2021",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 8373",
+        "定义",
+        "机器人术语"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "定义",
+        "术语"
+      ]
+    },
+    {
+      "id": 33,
+      "url": "https://temp.source-trace.local/56-iso-9283",
+      "type": "official_standard",
+      "title": "ISO 9283:1998 机器人性能规范",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "1998",
+          "event": "ISO 发布 9283:1998",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9283",
+        "机器人性能",
+        "测试"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "性能",
+        "测试"
+      ]
+    },
+    {
+      "id": 34,
+      "url": "https://temp.source-trace.local/57-iso-9409",
+      "type": "official_standard",
+      "title": "ISO 9409-1:2004 机器人机械接口",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2004",
+          "event": "ISO 发布 9409-1:2004",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9409",
+        "机器人安装",
+        "机械接口"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "接口",
+        "机械"
+      ]
+    },
+    {
+      "id": 35,
+      "url": "https://temp.source-trace.local/58-iso-9787",
+      "type": "official_standard",
+      "title": "ISO 9787:2023 机器人坐标系",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "ISO 发布 9787:2023",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 9787",
+        "机器人坐标系",
+        "运动学"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "坐标",
+        "运动学"
+      ]
+    },
+    {
+      "id": 36,
+      "url": "https://temp.source-trace.local/59-iso-14539",
+      "type": "official_standard",
+      "title": "ISO 14539:2023 机器人对象处理",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "ISO 发布 14539:2023",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO 14539",
+        "对象处理",
+        "抓取"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "抓取",
+        "操作"
+      ]
+    },
+    {
+      "id": 37,
+      "url": "https://temp.source-trace.local/60-iec-61508-1",
+      "type": "official_standard",
+      "title": "IEC 61508-1:2010 功能安全基础",
+      "confidence": 0.93,
+      "domain": "iec.ch",
+      "timeline": [
+        {
+          "ts": "2010",
+          "event": "IEC 发布 61508-1:2010",
+          "source": "iec.ch",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "IEC 61508",
+        "IEC 61508-1",
+        "SIL",
+        "功能安全"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IEC",
+        "SIL",
+        "功能安全"
+      ]
+    },
+    {
+      "id": 38,
+      "url": "https://temp.source-trace.local/61-iec-61508-2",
+      "type": "official_standard",
+      "title": "IEC 61508-2:2010 功能安全要求",
+      "confidence": 0.93,
+      "domain": "iec.ch",
+      "timeline": [
+        {
+          "ts": "2010",
+          "event": "IEC 发布 61508-2:2010",
+          "source": "iec.ch",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "IEC 61508-2",
+        "安全要求"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IEC",
+        "安全要求"
+      ]
+    },
+    {
+      "id": 39,
+      "url": "https://temp.source-trace.local/62-iec-62061",
+      "type": "official_standard",
+      "title": "IEC 62061:2021 机械安全",
+      "confidence": 0.93,
+      "domain": "iec.ch",
+      "timeline": [
+        {
+          "ts": "2021",
+          "event": "IEC 发布 62061:2021",
+          "source": "iec.ch",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "IEC 62061",
+        "robotics",
+        "机械安全"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IEC",
+        "机械安全"
+      ]
+    },
+    {
+      "id": 40,
+      "url": "https://temp.source-trace.local/64-gb-t-34131",
+      "type": "official_standard",
+      "title": "GB/T 34131-2017 工业机器人机械接口",
+      "confidence": 0.9,
+      "domain": "gov.cn",
+      "timeline": [
+        {
+          "ts": "2017",
+          "event": "中国发布 GB/T 34131-2017",
+          "source": "gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "GB/T 34131",
+        "GB/T 34131-2017",
+        "机械接口"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "GB/T",
+        "接口"
+      ]
+    },
+    {
+      "id": 41,
+      "url": "https://temp.source-trace.local/65-gb-t-33240",
+      "type": "official_standard",
+      "title": "GB/T 33240-2016 机器人术语",
+      "confidence": 0.9,
+      "domain": "gov.cn",
+      "timeline": [
+        {
+          "ts": "2016",
+          "event": "中国发布 GB/T 33240-2016",
+          "source": "gov.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "GB/T 33240",
+        "GB/T 33240-2016",
+        "机器人术语"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "GB/T",
+        "术语"
+      ]
+    },
+    {
+      "id": 42,
+      "url": "https://temp.source-trace.local/66-ifr-2024",
+      "type": "official_report",
+      "title": "IFR World Robotics Report 2024",
+      "confidence": 0.9,
+      "domain": "ifr.org",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "IFR 发布 World Robotics Report 2024",
+          "source": "ifr.org",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "IFR",
+        "IFR 2024",
+        "世界机器人报告",
+        "装机量"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IFR",
+        "报告",
+        "装机量"
+      ]
+    },
+    {
+      "id": 43,
+      "url": "https://temp.source-trace.local/67-ifr-2023",
+      "type": "official_report",
+      "title": "IFR World Robotics Report 2023",
+      "confidence": 0.9,
+      "domain": "ifr.org",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "IFR 发布 World Robotics Report 2023",
+          "source": "ifr.org",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "IFR 2023",
+        "机器人密度"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "IFR",
+        "密度"
+      ]
+    },
+    {
+      "id": 44,
+      "url": "https://temp.source-trace.local/68-cea-2024",
+      "type": "official_report",
+      "title": "中国电子学会：中国机器人产业发展报告 2024",
+      "confidence": 0.9,
+      "domain": "cea.org.cn",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "中国电子学会发布机器人产业发展报告 2024",
+          "source": "cea.org.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "中国机器人",
+        "中国机器人产业报告",
+        "产业发展",
+        "人形机器人"
+      ],
+      "soft_aliases": [
+        "中国机器人产业"
+      ],
+      "context": [
+        "中国电子学会",
+        "产业"
+      ]
+    },
+    {
+      "id": 45,
+      "url": "https://temp.source-trace.local/69-astm-f2992",
+      "type": "official_standard",
+      "title": "ASTM F2992-14 服务机器人性能测试",
+      "confidence": 0.9,
+      "domain": "astm.org",
+      "timeline": [
+        {
+          "ts": "2014",
+          "event": "ASTM 发布 F2992-14",
+          "source": "astm.org",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "ASTM F2992",
+        "服务机器人",
+        "测试"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ASTM",
+        "测试"
+      ]
+    },
+    {
+      "id": 46,
+      "url": "https://temp.source-trace.local/70-iso-ts-15066",
+      "type": "official_standard",
+      "title": "ISO/TS 15066:2016 协作机器人安全技术规范",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2016",
+          "event": "ISO 发布 ISO/TS 15066:2016",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "ISO/TS 15066",
+        "协作",
+        "技术规范"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "技术规范"
+      ]
+    },
+    {
+      "id": 47,
+      "url": "https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+      "type": "official_regulation",
+      "title": "EU Ethics Guidelines for Trustworthy AI",
+      "confidence": 0.9,
+      "domain": "europarl.europa.eu",
+      "timeline": [
+        {
+          "ts": "2019",
+          "event": "EU 发布可信 AI 伦理指南",
+          "source": "europarl.europa.eu",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "EU Ethics Guidelines",
+        "EU可信AI",
+        "伦理指南",
+        "可信AI"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "EU",
+        "伦理",
+        "可信"
+      ]
+    },
+    {
+      "id": 48,
+      "url": "https://temp.source-trace.local/41-asilomar",
+      "type": "official_guideline",
+      "title": "Asilomar AI Principles",
+      "confidence": 0.9,
+      "domain": "futureoflife.org",
+      "timeline": [
+        {
+          "ts": "2017",
+          "event": "Future of Life Institute 发布 Asilomar AI 原则",
+          "source": "futureoflife.org",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI原则",
+        "Asilomar",
+        "Asilomar AI Principles",
+        "beneficial AI"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "Asilomar",
+        "beneficial AI",
+        "原则"
+      ]
+    },
+    {
+      "id": 49,
+      "url": "https://temp.source-trace.local/42-beijing-ai",
+      "type": "official_guideline",
+      "title": "Beijing AI Principles",
+      "confidence": 0.9,
+      "domain": "baai.ac.cn",
+      "timeline": [
+        {
+          "ts": "2019",
+          "event": "北京智源发布 AI 原则",
+          "source": "baai.ac.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI原则",
+        "Beijing AI Principles",
+        "中国AI伦理",
+        "北京智源"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "北京",
+        "原则"
+      ]
+    },
+    {
+      "id": 50,
+      "url": "https://temp.source-trace.local/43-montreal",
+      "type": "official_guideline",
+      "title": "Montreal AI Ethics Institute Principles",
+      "confidence": 0.9,
+      "domain": "montrealethics.ai",
+      "timeline": [
+        {
+          "ts": "2018",
+          "event": "Montreal AI Ethics Institute 发布 AI 伦理原则",
+          "source": "montrealethics.ai",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI伦理原则",
+        "Montreal AI Ethics",
+        "Montreal AI Ethics Institute"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "Montreal",
+        "伦理"
+      ]
+    },
+    {
+      "id": 51,
+      "url": "https://temp.source-trace.local/44-ai-safety",
+      "type": "official_report",
+      "title": "AI Safety Institute: Frontier AI Safety Commitments",
+      "confidence": 0.9,
+      "domain": "aisafety.gov",
+      "timeline": [
+        {
+          "ts": "2023",
+          "event": "AI Safety Institute 发布 Frontier AI 安全承诺",
+          "source": "aisafety.gov",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI安全",
+        "AI安全承诺",
+        "Frontier AI",
+        "Frontier AI Safety"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "AI安全",
+        "Frontier",
+        "Frontier AI"
+      ]
+    },
+    {
+      "id": 52,
+      "url": "https://temp.source-trace.local/45-openai-charter",
+      "type": "official_guideline",
+      "title": "OpenAI Charter",
+      "confidence": 0.9,
+      "domain": "openai.com",
+      "timeline": [
+        {
+          "ts": "2018",
+          "event": "OpenAI 发布 Charter",
+          "source": "openai.com",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AGI",
+        "AI原则",
+        "OpenAI Charter",
+        "OpenAI 宪章"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "AGI",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": 53,
+      "url": "https://temp.source-trace.local/46-stanford-ai-index",
+      "type": "official_report",
+      "title": "Stanford AI Index Report 2024",
+      "confidence": 0.9,
+      "domain": "aiindex.stanford.edu",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "Stanford 发布 AI Index Report 2024",
+          "source": "aiindex.stanford.edu",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI Index",
+        "AI报告",
+        "Stanford",
+        "Stanford AI Index"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "Stanford",
+        "报告"
+      ]
+    },
+    {
+      "id": 54,
+      "url": "https://temp.source-trace.local/47-mit-tr35",
+      "type": "official_report",
+      "title": "MIT Technology Review 35 Innovators Under 35",
+      "confidence": 0.9,
+      "domain": "technologyreview.com",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "MIT Technology Review 发布 35 Innovators Under 35",
+          "source": "technologyreview.com",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "35 Innovators Under 35",
+        "MIT TR35",
+        "MIT Technology Review",
+        "青年 innovators"
+      ],
+      "soft_aliases": [],
+      "context": [
+        " innovators",
+        "MIT"
+      ]
+    },
+    {
+      "id": 55,
+      "url": "https://temp.source-trace.local/48-iso-9241-222",
+      "type": "official_standard",
+      "title": "ISO 9241-222:2026 以人为中心设计自评",
+      "confidence": 0.93,
+      "domain": "iso.org",
+      "timeline": [
+        {
+          "ts": "2026-06-26",
+          "event": "ISO 发布 9241-222:2026",
+          "source": "iso.org",
+          "tag": "initial_claim",
+          "confidence": 0.93
+        }
+      ],
+      "keywords": [
+        "HCD 自评",
+        "ISO 9241-222",
+        "以人为中心设计自评"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "ISO",
+        "人因",
+        "自评"
+      ]
+    },
+    {
+      "id": 56,
+      "url": "https://temp.source-trace.local/50-shlab-ai4science",
+      "type": "official_report",
+      "title": "Shanghai AI Laboratory: AI for Science",
+      "confidence": 0.9,
+      "domain": "shlab.cn",
+      "timeline": [
+        {
+          "ts": "2024",
+          "event": "上海AI实验室发布 AI for Science 报告",
+          "source": "shlab.cn",
+          "tag": "initial_claim",
+          "confidence": 0.9
+        }
+      ],
+      "keywords": [
+        "AI for Science",
+        "Shanghai AI Laboratory",
+        "上海AI实验室",
+        "科学智能"
+      ],
+      "soft_aliases": [],
+      "context": [
+        "上海",
+        "上海AI实验室",
+        "科学",
+        "科学智能"
+      ]
+    }
+  ]
+}
