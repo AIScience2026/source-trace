@@ -260,12 +260,17 @@
       <h2>📬 获取上线通知</h2>
       <div class="cta-box">
         <p style="margin-bottom: 20px;">我们正在内测中，留下邮箱，第一时间获取 API 密钥和文档</p>
-        <!-- FunctionGraph 邮箱收集：原地 POST，无跳转 -->
+        <!-- 邮箱收集：mailto 直连 SourceTrace 内测邮箱（零第三方表单 / 零后端） -->
         <form id="lead-form" style="display: inline-flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
           <input type="email" id="lead-email" name="email" placeholder="your@email.com" required style="padding: 12px 16px; background: #0f172a; border: 1px solid #475569; border-radius: 8px; color: #e2e8f0; font-size: 1rem; width: 300px;" />
           <button type="submit" id="lead-submit">订阅通知</button>
         </form>
         <p id="email-msg" style="margin-top: 12px; font-size: 0.9rem; min-height: 20px;"></p>
+        <p style="margin-top: 10px; font-size: 0.83rem; color: #94a3b8; line-height: 1.6;">
+          提交后会调用<strong>你自己的邮件客户端</strong>，直接发到内测邮箱
+          <a href="mailto:yuanting7971@agent.qq.com" style="color: #60a5fa;">yuanting7971@agent.qq.com</a>。<br>
+          全程不经过第三方表单服务，邮箱地址只进入我们的收件箱。
+        </p>
       </div>
     </div>
     
@@ -370,15 +375,14 @@
       search();
     }
     
-    // 邮箱收集：原地 POST 到 FunctionGraph
-    // ⚠️ 部署后把此地址改成你的 APIG 触发地址，例如 https://xxx.apig.cn-north-1.huaweicloudapis.com/v1/leads
-    const LEAD_ENDPOINT = 'https://YOUR-APIG-ENDPOINT/v1/leads';
+    // 邮箱收集：mailto 直连内测邮箱（零第三方表单 / 零后端 / 零你的 QQ 邮箱）
+    // 用户点「订阅通知」→ 本地邮件客户端唤起 → 预填收件人与主题 → 用户点发送
+    const LEAD_EMAIL = 'yuanting7971@agent.qq.com';
 
-    document.getElementById('lead-form')?.addEventListener('submit', async (e) => {
+    document.getElementById('lead-form')?.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = document.getElementById('lead-email').value.trim();
       const msg = document.getElementById('email-msg');
-      const btn = document.getElementById('lead-submit');
 
       if (!email || !email.includes('@')) {
         msg.style.color = '#ef4444';
@@ -386,32 +390,29 @@
         return;
       }
 
-      btn.disabled = true;
-      btn.textContent = '提交中...';
+      const subject = 'SourceTrace 上线通知订阅';
+      const body = [
+        '我要订阅 SourceTrace 内测上线通知。',
+        '',
+        '我的联系邮箱：' + email,
+        '订阅时间：' + new Date().toLocaleString('zh-CN'),
+        '来源页面：' + location.href,
+        '',
+        '（这封邮件由 SourceTrace 落地页自动生成，直接发送即可）'
+      ].join('\n');
 
       try {
-        const resp = await fetch(LEAD_ENDPOINT, {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({email})
-        });
-        const data = await resp.json();
+        window.location.href =
+          'mailto:' + encodeURIComponent(LEAD_EMAIL) +
+          '?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(body);
 
-        if (resp.ok && data.ok) {
-          msg.style.color = '#60a5fa';
-          msg.textContent = '✓ 订阅成功！上线时我们会通知你';
-          document.getElementById('lead-form').reset();
-        } else {
-          msg.style.color = '#ef4444';
-          msg.textContent = '提交失败，请稍后再试';
-        }
+        msg.style.color = '#60a5fa';
+        msg.textContent = '已为你打开邮件客户端，点「发送」即可完成订阅 ✓';
+        document.getElementById('lead-form').reset();
       } catch (err) {
-        // 后端未部署时给出友好提示，不要暴露报错
         msg.style.color = '#f59e0b';
-        msg.textContent = '服务暂不可用，请稍后再试';
-      } finally {
-        btn.disabled = false;
-        btn.textContent = '订阅通知';
+        msg.textContent = '唤起邮件客户端失败，请手动发到 ' + LEAD_EMAIL;
       }
     });
     
