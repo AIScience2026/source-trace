@@ -35,11 +35,21 @@ SERVER_VERSION = "0.4.1-mcp"
 TOOLS = [
     {
         "name": "trace",
+        "title": "Trace claim to primary source",
         "description": (
-            "将一条信息溯源到原始出处，输出审计级 JSON（一手源+时间线+污染链+置信度）。"
-            "调用方 Agent 自带 LLM/Web 搜索算力；本工具做编排 + Newsylist 媒体首发增强"
-            " + 垂直语料校验 + 审计组装。无明确原始文件时诚实返回 primary_source=null。"
+            "Trace a regulation/standard claim back to its primary source and return an "
+            "auditable JSON payload (primary_source + timeline + contamination_chain + "
+            "confidence). The calling agent supplies the LLM/web-search reasoning; this tool "
+            "does orchestration, media-first-report enrichment (Newsylist), vertical corpus "
+            "validation and audit assembly. When no primary source can be established it "
+            "honestly returns primary_source=null instead of fabricating one."
         ),
+        "annotations": {
+            "title": "Trace claim to primary source",
+            "readOnlyHint": True,
+            "destructiveHint": False,
+            "openWorldHint": False,
+        },
         "inputSchema": {
             "type": "object",
             "properties": {

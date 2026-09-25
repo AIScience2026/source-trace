@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.AIScience2026/source-trace",
+  "description": "Compliance provenance MCP server: trace regulation and standard claims back to verified primary sources, with honest degradation instead of fabrication.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/AIScience2026/source-trace",
+    "source": "github"
+  },
+  "version": "0.4.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "source-trace",
+      "version": "0.4.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ST_LLM_PROVIDER",
+          "description": "Set to 'openai_compatible' to enable the hosted LLM fallback tier. Leave as 'mock' (default) for the zero-dependency prototype.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ST_LLM_API_KEY",
+          "description": "API key for the hosted LLM fallback tier. Only used when ST_LLM_PROVIDER is not 'mock'.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ST_ALIPAY_MOCK",
+          "description": "Keep 'true' (default) while the Alipay AI-收 integration is not live in production.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        }
+      ]
+    }
+  ]
+}

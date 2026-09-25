@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "source-trace"
+version = "0.4.1"
+description = "Compliance provenance MCP server: trace regulations and standards back to primary sources, with honest degradation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "SourceTrace contributors" }]
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "compliance",
+    "provenance",
+    "traceability",
+    "ai-safety",
+    "standards",
+    "anti-hallucination",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://aiscience2026.github.io/source-trace/"
+Repository = "https://github.com/AIScience2026/source-trace"
+Issues = "https://github.com/AIScience2026/source-trace/issues"
+
+[project.scripts]
+source-trace = "mcp_server:main"
+
+[tool.setuptools]
+py-modules = [
+    "mcp_server",
+    "trace_engine",
+    "config",
+    "store",
+    "alipay",
+    "newsylist_client",
+    "compliance_db",
+]

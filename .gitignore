@@ -21,3 +21,11 @@ venv/
 # IDE
 .vscode/
 .idea/
+
+# Distribution build artifacts
+dist/
+build/
+*.egg-info/
+.dist-venv/
+
+# Directory-site submission metadata (kept in repo intentionally)
