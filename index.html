@@ -305,30 +305,36 @@
       const resultDiv = document.getElementById('result');
       resultDiv.className = 'result';
       
-      // 简单的关键词匹配（前端版本）
+      // 简单的关键词匹配（前端版本，规则与后端 compliance_db.search_by_keyword 对齐）
       const q = query.toLowerCase();
       const matches = sources.map(s => {
         let score = 0;
         const title = (s.title || '').toLowerCase();
         const keywords = (s.keywords || []).map(k => k.toLowerCase());
         const softAliases = (s.soft_aliases || []).map(k => k.toLowerCase());
-        
-        // 标题完全匹配
-        if (title.includes(q)) score += 10;
-        
-        // 关键词匹配
+
+        // 标题包含查询（或查询包含标题词）—— 具体度最高，单独加权
+        if (title.includes(q)) score += 20;
+
+        // 硬关键词：精确相等最高；子串匹配要求 >=4 字符，避免 "ai"/"sil" 类短词误命中
+        let bestKwLen = 0;
         keywords.forEach(kw => {
-          if (q.includes(kw) || kw.includes(q)) score += 5;
+          if (kw === q) { score += 15; if (kw.length > bestKwLen) bestKwLen = kw.length; }
+          else if (kw.length >= 4 && q.includes(kw)) { score += 6; if (kw.length > bestKwLen) bestKwLen = kw.length; }
+          else if (kw.length >= 4 && kw.includes(q) && q.length >= 4) { score += 4; }
         });
-        
-        // 软别名匹配
+
+        // 软别名：需 >=4 字符，且查询本身命中（明确意图）才计分
         softAliases.forEach(sa => {
-          if (q.includes(sa) || sa.includes(q)) score += 3;
+          if (sa.length >= 4 && q.includes(sa)) score += 3;
         });
-        
-        return { source: s, score };
-      }).filter(m => m.score > 0)
-        .sort((a, b) => b.score - a.score)
+
+        // 具体度加成：命中的关键词越长越具体，排序越靠前（与后端 kw_specificity 同义）
+        score += Math.min(bestKwLen, 20);
+
+        return { source: s, score, bestKwLen };
+      }).filter(m => m.score > 3)
+        .sort((a, b) => (b.bestKwLen - a.bestKwLen) || (b.score - a.score))
         .slice(0, 5);
       
       if (matches.length === 0) {
@@ -340,10 +346,17 @@
       let html = '';
       matches.forEach(m => {
         const s = m.source;
+        // 溯源可信度标签：诚实标注每条能不能真的点进去
+        const badge = s.url_status === 'verified'
+          ? '<span style="color:#4ade80;font-weight:600;">✓ 链接已核实</span>'
+          : s.url_status === 'verified_withdrawn'
+          ? '<span style="color:#fbbf24;font-weight:600;">⚠ 标准已作废/被取代</span>'
+          : '<span style="color:#f87171;font-weight:600;">✗ 链接未核实（仅线索）</span>';
         html += `
           <div class="result-title">${s.title}</div>
-          <div class="result-meta">类型：${s.type} | 置信度：${s.confidence} | 域名：${s.domain || '未知'}</div>
+          <div class="result-meta">类型：${s.type} | 置信度：${s.confidence} | 域名：${s.domain || '未知'} | 溯源：${badge}</div>
           <div class="result-meta">URL：${s.url}</div>
+          ${s.url_note ? `<div class="result-meta" style="color:#94a3b8;">说明：${s.url_note}</div>` : ''}
           ${s.keywords.length ? `<div class="result-meta">关键词：${s.keywords.slice(0, 8).join(', ')}</div>` : ''}
           ${s.timeline && s.timeline.length ? `
             <div class="result-timeline">

@@ -209,16 +209,23 @@ def search_by_keyword(query: str, limit: int = 10) -> list:
         # 1) 先在 keywords 表精确/包含匹配
         # 用 instr(?，keyword) 检查 query 是否包含 keyword，支持中文子串匹配
         cur = conn.execute("""
-            SELECT DISTINCT s.*, 
-                   GROUP_CONCAT(DISTINCT k.keyword) as matched_keywords,
-                   SUM(CASE WHEN k.is_soft_alias=1 THEN 1 ELSE 0 END) as soft_hits
-            FROM sources s
-            JOIN keywords k ON k.source_id = s.id
-            WHERE instr(?, lower(k.keyword)) > 0
-            GROUP BY s.id
-            ORDER BY soft_hits ASC, s.confidence DESC
-            LIMIT ?
-        """, (q, limit))
+                SELECT DISTINCT s.*,
+                       GROUP_CONCAT(DISTINCT k.keyword) as matched_keywords,
+                       SUM(CASE WHEN k.is_soft_alias=1 THEN 1 ELSE 0 END) as soft_hits,
+                       SUM(CASE WHEN k.is_soft_alias=0 AND lower(k.keyword) = ? THEN 1 ELSE 0 END) as exact_hits,
+                       MAX(length(k.keyword)) as kw_specificity
+                FROM sources s
+                JOIN keywords k ON k.source_id = s.id
+                WHERE instr(?, lower(k.keyword)) > 0
+                  AND (
+                        (k.is_soft_alias=0 AND length(k.keyword) >= 4)
+                        OR k.is_soft_alias=1
+                        OR lower(k.keyword) = ?
+                      )
+                GROUP BY s.id
+                ORDER BY exact_hits DESC, kw_specificity DESC, soft_hits ASC, s.confidence DESC
+                LIMIT ?
+            """, (q, q, q, limit))
         rows = cur.fetchall()
 
         for row in rows:
@@ -263,6 +270,8 @@ def search_by_keyword(query: str, limit: int = 10) -> list:
                     "type": row["type"],
                     "title": row["title"],
                     "confidence": row["confidence"],
+                    "url_status": row["url_status"] if "url_status" in row.keys() else None,
+                    "url_note": row["url_note"] if "url_note" in row.keys() else None,
                 },
                 "matched_keywords": matched_kws,
                 "timeline": timeline,

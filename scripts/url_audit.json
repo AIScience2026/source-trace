@@ -1,0 +1,399 @@
+[
+  {
+    "id": 1,
+    "title": "人工智能拟人化互动服务管理暂行办法（2026-07-15 起施行）",
+    "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395284407.htm",
+    "status": "ok",
+    "http": 200,
+    "bytes": 2048
+  },
+  {
+    "id": 2,
+    "title": "Regulation (EU) 2024/1689 (AI Act)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "status": "ok",
+    "http": 202,
+    "bytes": 2035
+  },
+  {
+    "id": 3,
+    "title": "NIST AI Risk Management Framework 1.0",
+    "url": "https://doi.org/10.6028/NIST.AI.100-1",
+    "status": "err",
+    "detail": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
+  },
+  {
+    "id": 4,
+    "title": "Regulation (EU) 2026/1744 (Digital Omnibus — 高风险义务推迟)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+    "status": "ok",
+    "http": 202,
+    "bytes": 2035
+  },
+  {
+    "id": 5,
+    "title": "ISO 9241-222:2026 以人为中心设计自评",
+    "url": "https://www.iso.org/ru/standard/88373.html",
+    "status": "http_403",
+    "http": 403
+  },
+  {
+    "id": 6,
+    "title": "中央网信办「清朗·整治AI应用乱象」第二阶段通报（清理561万条、处置账号4.9万）",
+    "url": "https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm",
+    "status": "ok",
+    "http": 200,
+    "bytes": 2048
+  },
+  {
+    "id": 7,
+    "title": "人工智能生成合成内容标识办法（2025-09-01 施行）",
+    "url": "https://www.cac.gov.cn/2025-03/xx/c_标识办法原文.htm",
+    "status": "http_404",
+    "http": 404
+  },
+  {
+    "id": 8,
+    "title": "生成式人工智能服务管理暂行办法",
+    "url": "https://www.cac.gov.cn/2023-08/15/c_生成式AI暂行办法.htm",
+    "status": "http_404",
+    "http": 404
+  },
+  {
+    "id": 9,
+    "title": "互联网信息服务深度合成管理规定",
+    "url": "https://www.cac.gov.cn/2023-01/10/c_深度合成管理规定.htm",
+    "status": "http_404",
+    "http": 404
+  },
+  {
+    "id": 10,
+    "title": "科技伦理审查办法（试行）",
+    "url": "https://www.most.gov.cn/伦理审查办法.htm",
+    "status": "http_404",
+    "http": 404
+  },
+  {
+    "id": 11,
+    "title": "数据安全法",
+    "url": "https://www.npc.gov.cn/数据安全法.htm",
+    "status": "err",
+    "detail": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)>"
+  },
+  {
+    "id": 12,
+    "title": "个人信息保护法",
+    "url": "https://www.npc.gov.cn/个人信息保护法.htm",
+    "status": "err",
+    "detail": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)>"
+  },
+  {
+    "id": 13,
+    "title": "网络安全法",
+    "url": "https://www.npc.gov.cn/网络安全法.htm",
+    "status": "err",
+    "detail": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)>"
+  },
+  {
+    "id": 14,
+    "title": "NIST AI 600-1",
+    "url": "https://temp.source-trace.local/14-nist-ai-600-1",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 15,
+    "title": "NIST AI 700-1",
+    "url": "https://temp.source-trace.local/15-nist-ai-700-1",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 16,
+    "title": "OECD AI 原则",
+    "url": "https://temp.source-trace.local/16-oecd-ai",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 17,
+    "title": "UNESCO AI 伦理建议书",
+    "url": "https://temp.source-trace.local/17-unesco-ai",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 18,
+    "title": "ISO 9241-210 人因工程设计",
+    "url": "https://temp.source-trace.local/18-iso-9241-210",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 19,
+    "title": "ISO 9241-211 设计规范",
+    "url": "https://temp.source-trace.local/19-iso-9241-211",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 20,
+    "title": "ISO 9241-220 用户体验度量",
+    "url": "https://temp.source-trace.local/20-iso-9241-220",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 21,
+    "title": "ISO 9241-230 语音交互",
+    "url": "https://temp.source-trace.local/21-iso-9241-230",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 22,
+    "title": "ISO 9241-240 人因工效学",
+    "url": "https://temp.source-trace.local/22-iso-9241-240",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 23,
+    "title": "ISO 9241-280 无障碍设计",
+    "url": "https://temp.source-trace.local/23-iso-9241-280",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 24,
+    "title": "GB/T 41870-2022 社交机器人",
+    "url": "https://temp.source-trace.local/24-gb-t-41870-2022",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 25,
+    "title": "GB/T 36430-2018 服务机器人性能",
+    "url": "https://temp.source-trace.local/25-gb-t-36430-2018",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 26,
+    "title": "IEEE P7000 - Model Standard for Trustworthy Autonomous Systems",
+    "url": "https://temp.source-trace.local/38-ieee-p7000",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 27,
+    "title": "IEEE P2864 - AI System Lifecycle",
+    "url": "https://temp.source-trace.local/39-ieee-p2864",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 28,
+    "title": "ISO 10218-1:2011 工业机器人安全 Part 1",
+    "url": "https://temp.source-trace.local/51-iso-10218-1",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 29,
+    "title": "ISO 10218-2:2011 工业机器人安全 Part 2",
+    "url": "https://temp.source-trace.local/52-iso-10218-2",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 30,
+    "title": "ISO 10218-1:2023 修订版",
+    "url": "https://temp.source-trace.local/53-iso-10218-2023",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 31,
+    "title": "ISO 15066:2016 协作机器人安全",
+    "url": "https://temp.source-trace.local/54-iso-15066",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 32,
+    "title": "ISO 8373:2021 机器人术语",
+    "url": "https://temp.source-trace.local/55-iso-8373",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 33,
+    "title": "ISO 9283:1998 机器人性能规范",
+    "url": "https://temp.source-trace.local/56-iso-9283",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 34,
+    "title": "ISO 9409-1:2004 机器人机械接口",
+    "url": "https://temp.source-trace.local/57-iso-9409",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 35,
+    "title": "ISO 9787:2023 机器人坐标系",
+    "url": "https://temp.source-trace.local/58-iso-9787",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 36,
+    "title": "ISO 14539:2023 机器人对象处理",
+    "url": "https://temp.source-trace.local/59-iso-14539",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 37,
+    "title": "IEC 61508-1:2010 功能安全基础",
+    "url": "https://temp.source-trace.local/60-iec-61508-1",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 38,
+    "title": "IEC 61508-2:2010 功能安全要求",
+    "url": "https://temp.source-trace.local/61-iec-61508-2",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 39,
+    "title": "IEC 62061:2021 机械安全",
+    "url": "https://temp.source-trace.local/62-iec-62061",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 40,
+    "title": "GB/T 34131-2017 工业机器人机械接口",
+    "url": "https://temp.source-trace.local/64-gb-t-34131",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 41,
+    "title": "GB/T 33240-2016 机器人术语",
+    "url": "https://temp.source-trace.local/65-gb-t-33240",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 42,
+    "title": "IFR World Robotics Report 2024",
+    "url": "https://temp.source-trace.local/66-ifr-2024",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 43,
+    "title": "IFR World Robotics Report 2023",
+    "url": "https://temp.source-trace.local/67-ifr-2023",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 44,
+    "title": "中国电子学会：中国机器人产业发展报告 2024",
+    "url": "https://temp.source-trace.local/68-cea-2024",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 45,
+    "title": "ASTM F2992-14 服务机器人性能测试",
+    "url": "https://temp.source-trace.local/69-astm-f2992",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 46,
+    "title": "ISO/TS 15066:2016 协作机器人安全技术规范",
+    "url": "https://temp.source-trace.local/70-iso-ts-15066",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 47,
+    "title": "EU Ethics Guidelines for Trustworthy AI",
+    "url": "https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+    "status": "ok",
+    "http": 202,
+    "bytes": 2048
+  },
+  {
+    "id": 48,
+    "title": "Asilomar AI Principles",
+    "url": "https://temp.source-trace.local/41-asilomar",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 49,
+    "title": "Beijing AI Principles",
+    "url": "https://temp.source-trace.local/42-beijing-ai",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 50,
+    "title": "Montreal AI Ethics Institute Principles",
+    "url": "https://temp.source-trace.local/43-montreal",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 51,
+    "title": "AI Safety Institute: Frontier AI Safety Commitments",
+    "url": "https://temp.source-trace.local/44-ai-safety",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 52,
+    "title": "OpenAI Charter",
+    "url": "https://temp.source-trace.local/45-openai-charter",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 53,
+    "title": "Stanford AI Index Report 2024",
+    "url": "https://temp.source-trace.local/46-stanford-ai-index",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 54,
+    "title": "MIT Technology Review 35 Innovators Under 35",
+    "url": "https://temp.source-trace.local/47-mit-tr35",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 55,
+    "title": "ISO 9241-222:2026 以人为中心设计自评",
+    "url": "https://temp.source-trace.local/48-iso-9241-222",
+    "status": "placeholder",
+    "http": null
+  },
+  {
+    "id": 56,
+    "title": "Shanghai AI Laboratory: AI for Science",
+    "url": "https://temp.source-trace.local/50-shlab-ai4science",
+    "status": "placeholder",
+    "http": null
+  }
+]

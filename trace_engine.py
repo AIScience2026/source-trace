@@ -175,6 +175,11 @@ def _db_search(input_text: str, domain: str, depth: str):
         hits = search_by_keyword(input_text, limit=3)
         if hits:
             best = hits[0]
+            # 最低相关性门槛：防止弱匹配/错配（如 "Asilomar" 命中 IEC 61508）
+            # 低于门槛宁可诚实降级，也不返回不相关的一手源 —— 这是产品的立身之本
+            MIN_RELEVANCE = 0.6
+            if best["source"].get("confidence", 0) < MIN_RELEVANCE:
+                return None
             report = {
                 "primary_source": best["source"],
                 "timeline": best.get("timeline", []),
@@ -184,6 +189,15 @@ def _db_search(input_text: str, domain: str, depth: str):
                 "degradation_note": None,
                 "mode": "db",
             }
+            # 溯源可信度透出：让调用方知道这条能不能真的点进去
+            ps = report["primary_source"]
+            if ps.get("url_status") == "unverified":
+                report["degradation_note"] = (
+                    "该信源 URL 未经核实（%s），仅可用作线索，不建议对外引用" %
+                    (ps.get("url_note") or "原因未标注")
+                )
+            elif ps.get("url_status") == "verified_withdrawn":
+                report["degradation_note"] = "该标准已被作废或被新版本取代，引用时须核实现行版本"
             if depth == "deep":
                 # deep 档补充污染链占位（真实值需后续 LLM/检索增强）
                 report["contamination_chain"] = [

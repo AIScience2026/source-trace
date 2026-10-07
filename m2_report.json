@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-20",
+  "engine": "mock heuristic (KB-driven)",
+  "positive_hit_rate": 1.0,
+  "honest_degrade_rate": 1.0,
+  "traceability_rate": 1.0,
+  "counts": {
+    "hits": 9,
+    "miss": 0,
+    "wrong": 0,
+    "honest": 3,
+    "fabricated": 0,
+    "total": 12
+  },
+  "kb_t1_coverage": [
+    {
+      "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "domain": "eur-lex.europa.eu",
+      "in_kb": true
+    },
+    {
+      "source": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+      "domain": "eur-lex.europa.eu",
+      "in_kb": true
+    },
+    {
+      "source": "https://www.iso.org/ru/standard/88373.html",
+      "domain": "iso.org",
+      "in_kb": true
+    },
+    {
+      "source": "https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm",
+      "domain": "cac.gov.cn",
+      "in_kb": true
+    },
+    {
+      "source": "https://www.cac.gov.cn/2026-04/10/c_1777558395284407.htm",
+      "domain": "cac.gov.cn",
+      "in_kb": true
+    },
+    {
+      "source": "https://www.cac.gov.cn/2025-03/xx/c_标识办法原文.htm",
+      "domain": "cac.gov.cn",
+      "in_kb": true
+    }
+  ],
+  "cases": [
+    {
+      "query": "中国人工智能拟人化互动服务管理暂行办法",
+      "expected_domain": "cac.gov.cn",
+      "got_domain": "cac.gov.cn",
+      "got_title": "人工智能拟人化互动服务管理暂行办法（2026-07-15 起施行）",
+      "conf": 0.94,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "AI伴侣机器人合规要求",
+      "expected_domain": "cac.gov.cn",
+      "got_domain": "cac.gov.cn",
+      "got_title": "人工智能拟人化互动服务管理暂行办法（2026-07-15 起施行）",
+      "conf": 0.94,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "欧盟AI法案 Art.50 透明度义务可执法",
+      "expected_domain": "eur-lex.europa.eu",
+      "got_domain": "eur-lex.europa.eu",
+      "got_title": "Regulation (EU) 2024/1689 (AI Act)",
+      "conf": 0.95,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "EU AI Act",
+      "expected_domain": "eur-lex.europa.eu",
+      "got_domain": "eur-lex.europa.eu",
+      "got_title": "Regulation (EU) 2024/1689 (AI Act)",
+      "conf": 0.95,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "Digital Omnibus 2026/1744 高风险义务推迟",
+      "expected_domain": "eur-lex.europa.eu",
+      "got_domain": "eur-lex.europa.eu",
+      "got_title": "Regulation (EU) 2026/1744 (Digital Omnibus — 高风险义务推迟)",
+      "conf": 0.94,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "ISO 9241-222 以人为中心设计标准发布",
+      "expected_domain": "iso.org",
+      "got_domain": "iso.org",
+      "got_title": "ISO 9241-222:2026 以人为中心设计自评",
+      "conf": 0.93,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "清朗整治AI应用乱象第二阶段通报",
+      "expected_domain": "cac.gov.cn",
+      "got_domain": "cac.gov.cn",
+      "got_title": "中央网信办「清朗·整治AI应用乱象」第二阶段通报（清理561万条、处置账号4.9万）",
+      "conf": 0.95,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "AI生成合成内容标识办法施行",
+      "expected_domain": "cac.gov.cn",
+      "got_domain": "cac.gov.cn",
+      "got_title": "人工智能生成合成内容标识办法（2025-09-01 施行）",
+      "conf": 0.92,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "NIST AI 风险管理框架",
+      "expected_domain": "doi.org",
+      "got_domain": "doi.org",
+      "got_title": "NIST AI Risk Management Framework 1.0",
+      "conf": 0.93,
+      "status": "HIT(命中)"
+    },
+    {
+      "query": "某AI伴侣App 2026年8月融资新闻",
+      "expected_domain": null,
+      "got_domain": null,
+      "got_title": null,
+      "conf": 0.3,
+      "status": "HONEST(诚实降级)"
+    },
+    {
+      "query": "AI伴侣行业市场规模预测 2030",
+      "expected_domain": null,
+      "got_domain": null,
+      "got_title": null,
+      "conf": 0.3,
+      "status": "HONEST(诚实降级)"
+    },
+    {
+      "query": "Character.AI 诉讼案最新进展",
+      "expected_domain": null,
+      "got_domain": null,
+      "got_title": null,
+      "conf": 0.3,
+      "status": "HONEST(诚实降级)"
+    }
+  ]
+}

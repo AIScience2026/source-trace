@@ -43,6 +43,8 @@ for row in cur.fetchall():
         "title": row["title"],
         "confidence": row["confidence"],
         "domain": row["domain"],
+        "url_status": row["url_status"] if "url_status" in row.keys() else None,
+        "url_note": row["url_note"] if "url_note" in row.keys() else None,
         "timeline": timeline,
         "keywords": keywords,
         "soft_aliases": soft_aliases,
@@ -57,7 +59,7 @@ output = {
     "sources": sources,
 }
 
-with open("web/sources.json", "w", encoding="utf-8") as f:
+with open("sources.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
 print(f"导出完成：{len(sources)} 条 -> web/sources.json")
